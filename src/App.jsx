@@ -1,5 +1,5 @@
 import Todo from "./components/Todo";
-import initialState from "./data/data";
+import initialState from "./Data/Data";
 import { useReducer } from "react";
 
 
@@ -20,7 +20,7 @@ function App() {
       <input type="text" placeholder="Add todo" />
       <button>Add</button>
       
-      {todos.map(t => <Todo {...t} key={t.id} />)}
+      {todos.map(t => <Todo todo={t} key={t.id} />)}
     </>
   );
 }
